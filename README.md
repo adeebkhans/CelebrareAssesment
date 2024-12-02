@@ -65,20 +65,21 @@ The app will be accessible at `http://localhost:5173`.
 ## **Project Structure**
 
 ```
-CelebrareAssesment/
-├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx        # Top navigation bar
-│   │   ├── Toolbar.jsx       # Bottom toolbar with formatting options
-│   │   ├── TextEditor.jsx    # Main text editor component
-│   ├── hooks/
-│   │   ├── useTextReducer.js # Custom hook for undo/redo state
-│   ├── App.jsx               # Root component
-│   ├── main.jsx              # Entry point
-├── public/
-├── package.json
-├── tailwind.config.js
-└── README.md
+src/
+│
+├── components/
+│   ├── TextEditor/
+│   │   ├── TextEditorToolbar.jsx
+│   │   ├── TextStyleControls.jsx
+│   │   ├── DraggableText.jsx
+│   │   └── index.jsx
+│
+├── hooks/
+│   ├── useTextHistory.js
+│   ├── useTextStyles.js
+│   └── useDraggable.js
+│
+└── App.js
 ```
 
 
